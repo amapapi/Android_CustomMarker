@@ -1,0 +1,3 @@
+[submodule "android_map"]
+	path = android_map
+	url = https://github.com/amapapi/android_map.git
