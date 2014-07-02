@@ -7,7 +7,7 @@
 <br /> 提供了基本的饼图，柱状图和详细显示的Marker样式的绘制
 <br /> <h2>下载资源：</h2>
  <br />**[markerlibrary.jar](https://github.com/qiyy/Android_CustomMarker_lib/raw/master/resources/markerlibrary.jar)** (library)
- <br />**[实例应用](https://github.com/qiyy/android_map/raw/master/libs/ViewMarkerDemo.apk)** (apk)
+ <br />**[实例应用](https://github.com/qiyy/Android_CustomMarker_lib/raw/master/resources/ViewMarkerDemo.apk)** (apk)
 <br /><h2> 使用方法：</h2>
 <br />  1:搭建高德地图 AndroidSDK工程方法见：**[配置方法](http://developer.amap.com/api/android-sdk/guide/project/)**
 <br />  2:接口使用
