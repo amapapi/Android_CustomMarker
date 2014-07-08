@@ -9,7 +9,7 @@
  <br />**[markerlibrary.jar](https://github.com/amapapi/Android_CustomMarker_lib/raw/master/resources/markerlibrary.jar)** (library)
  <br />**[实例应用](https://github.com/amapapi/Android_CustomMarker_lib/raw/master/resources/ViewMarkerDemo.apk)** (apk)
  <br /> 扫一扫下载应用
- <br />![Screenshot](https://raw.githubusercontent.com/amapapi/Android_CustomMarker_lib/master/resources/%E4%BA%8C%E7%BB%B4%E7%A0%81.png)
+ <br />![Screenshot](https://raw.githubusercontent.com/qiyy/Android_CustomMarker_lib/master/resources/%E4%BA%8C%E7%BB%B4%E7%A0%81.png)
 <br /><h2> 使用方法：</h2>
 <br />  1:搭建高德地图 AndroidSDK工程方法见：**[配置方法](http://developer.amap.com/api/android-sdk/guide/project/)**
 <br />  2:接口使用
