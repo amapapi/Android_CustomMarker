@@ -23,7 +23,7 @@ import com.amap.api.maps.model.LatLng;
 import com.amap.api.maps.model.MarkerOptions;
 
 /**
- * @author yiyi.qi
+ * @author yiyi.qi 
  * 
  */
 public class MarkerOptionsFactory {
@@ -33,11 +33,15 @@ public class MarkerOptionsFactory {
 	 * 
 	 * @param context
 	 * @param latlon
-	 *            marker的位置信息
+	 *            获取infowindow样式的markeroptions
 	 * @param title
-	 *            marker的title信息
+	 *            marker的title信息（可以为空，空则不显示标题信息）
+	 * @param content
+	 *            详细描述消息（可以为空，空则不显示详细信息）
 	 * @param drawable
 	 *            背景图片
+	 * @param contentDrawable
+	 *            内容图片（可以为空，空则不显示图片）
 	 * @return
 	 */
 	public static MarkerOptions createInfoWindowMarkerOptions(Context context,
@@ -87,11 +91,16 @@ public class MarkerOptionsFactory {
 
 	/**
 	 * 根据传入的数据对数据进行绘制饼状图
-	 * @param context 
-	 * @param latlon  位置信息
-	 * @param quantities  统计图统计信息
-	 * @param colors   饼图对应的颜色信息
-	 * @param radius  饼图的半径
+	 * 
+	 * @param context
+	 * @param latlon
+	 *            位置信息
+	 * @param quantities
+	 *            统计图统计信息
+	 * @param colors
+	 *            饼图对应的颜色信息
+	 * @param radius
+	 *            饼图的半径
 	 * @return
 	 */
 	public static MarkerOptions createPieChartMarkerOptions(Context context,
@@ -114,7 +123,6 @@ public class MarkerOptionsFactory {
 			canvas.drawArc(rectF, angle, swepAngle, true, paint);
 			angle += swepAngle;
 		}
-
 		BitmapDescriptor markerIcon = BitmapDescriptorFactory
 				.fromBitmap(bitmap);
 		markerOptions.position(latlon).icon(markerIcon).anchor(0.5f, 0.5f);
@@ -123,11 +131,16 @@ public class MarkerOptionsFactory {
 
 	/**
 	 * 根据传入的数据对数据进行绘制柱状图
+	 * 
 	 * @param context
-	 * @param latlon  数据位置信息
-	 * @param quantities  数据统计信息
-	 * @param colors   不同柱状统计图对应的颜色
-	 * @param radius   柱状图的尺寸
+	 * @param latlon
+	 *            数据位置信息
+	 * @param quantities
+	 *            数据统计信息
+	 * @param colors
+	 *            不同柱状统计图对应的颜色
+	 * @param radius
+	 *            柱状图的尺寸（单位px）
 	 * @return
 	 */
 	public static MarkerOptions createBarChartMarkerOptions(Context context,
@@ -137,7 +150,7 @@ public class MarkerOptionsFactory {
 		Canvas canvas = new Canvas(bitmap);
 		Paint paint = new Paint();
 		double max = 0;
-		int height = 0;	 
+		int height = 0;
 		int count = quantities.length;
 		for (int i = 0; i < count; i++) {
 			if (quantities[i] > max) {
