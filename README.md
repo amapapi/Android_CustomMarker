@@ -4,7 +4,7 @@
 
 - [高德官方网站申请key](http://id.amap.com/?ref=http%3A%2F%2Fapi.amap.com%2Fkey%2F).
 - 阅读[参考手册](http://api.amap.com/Public/reference/Android%20API%20v2/).
-- - 工程基于3D地图2.2.1版本，[基本介绍](https://github.com/amapapi/Android_AMap_3DMapSDK).
+- 工程基于3D地图2.2.1版本，[基本介绍](https://github.com/amapapi/Android_AMap_3DMapSDK).
 
 ##效果图如下：
 
@@ -22,7 +22,7 @@
 * [实例应用](https://github.com/amapapi/Android_CustomMarker_lib/raw/master/resources/ViewMarkerDemo.apk) (apk)
 * 扫一扫下载应用
 
-![Screenshot](https://raw.githubusercontent.com/qiyy/Android_CustomMarker_lib/master/resources/%E4%BA%8C%E7%BB%B4%E7%A0%81.png)
+![Screenshot](https://raw.githubusercontent.com/qiyy/Android_CustomMarker_lib/master/resources/%E4%BA%8C%E7%BB%B4%E7%A0%81.png)  
  
  ##使用方法：
  
