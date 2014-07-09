@@ -33,7 +33,7 @@ public class MarkerOptionsFactory {
 	 * 
 	 * @param context
 	 * @param latlon
-	 *            获取infowindow样式的markeroptions
+	 *            数据位置信息
 	 * @param title
 	 *            marker的title信息（可以为空，空则不显示标题信息）
 	 * @param content
@@ -45,7 +45,7 @@ public class MarkerOptionsFactory {
 	 * @return
 	 */
 	public static MarkerOptions createInfoWindowMarkerOptions(Context context,
-			LatLng latlon, String title, String content, Drawable drawable,
+			LatLng latlon, String title, String content, Drawable backgroundDrawable,
 			Drawable contentDrawable) {
 		MarkerOptions markerOptions = new MarkerOptions();
 
@@ -78,8 +78,8 @@ public class MarkerOptionsFactory {
 		}
 
 		linearLayout.addView(contentLayout);
-		if (drawable != null) {
-			linearLayout.setBackgroundDrawable(drawable);
+		if (backgroundDrawable != null) {
+			linearLayout.setBackgroundDrawable(backgroundDrawable);
 		}
 		// 通过View获取BitmapDescriptor对象
 		BitmapDescriptor markerIcon = BitmapDescriptorFactory
